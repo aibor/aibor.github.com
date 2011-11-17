@@ -1,9 +1,11 @@
-Verschlüsselung einzelner Dateien
-1291749640.php-aiBo
-1301998553
-linux shell verschlüsselung
-<p>Zur schnellen Verschlüsslung einzener Dateien habe ich folgende <a href="https://bbs.archlinux.org/viewtopic.php?id=116152">Syntax gefunden</a>, die in die bashrc gehört:</p>
-<pre>CRYPT_EXT='3des'
+---
+layout: post
+title: Verschlüsselung einzelner Dateien
+tags: linux shell verschlüsselung
+---
+Zur schnellen Verschlüsslung einzener Dateien habe ich folgende [Syntax gefunden](https://bbs.archlinux.org/viewtopic.php?id=116152), die in die bashrc gehört:
+{% highlight bash linenos %}
+CRYPT_EXT='3des'
 encrypt () 
 { 
     local EFILE="$1.$CRYPT_EXT";
@@ -14,7 +16,7 @@ encrypt ()
     };
     openssl des3 -salt -in "$DFILE" -out "$EFILE";
     chmod --reference="$DFILE" "$EFILE";
-    [[ -e "$EFILE" ]] &amp;&amp; shred -un64 "$DFILE"
+    [[ -e "$EFILE" ]] && shred -un64 "$DFILE"
 }
 
 decrypt () 
@@ -30,7 +32,8 @@ decrypt ()
         return 2
     };
     openssl des3 -d -salt -in $EFILE -out $DFILE;
-    [[ -e "$DFILE" ]] &amp;&amp; rm -f "$EFILE"
-}</pre>
-<p>Statt des3 kann wohl auch aes verwendet werden. Passwörter werden dabei anscheinend über die Standardeingabe eingelesen.</p>
+    [[ -e "$DFILE" ]] && rm -f "$EFILE"
+}
+{% endhighlight %}
+Statt des3 kann wohl auch aes verwendet werden. Passwörter werden dabei anscheinend über die Standardeingabe eingelesen.
 

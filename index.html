@@ -3,8 +3,10 @@ layout: default
 title: Hello World!
 ---
 
-<ul class="posts">
-  {% for post in site.posts limit=1 %}
-    <li>{{ post.content }}</li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="posting">
+  <h2>{{ post.title }}</h2>
+  <p style="font-size:0.7em">{{ post.date | date_to_string }} {{ post.tags }}</p>
+  {{ post.content }}
+</div>
+{% endfor %}
