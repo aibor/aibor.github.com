@@ -1,0 +1,10 @@
+---
+layout: default
+title: Hello World!
+---
+
+<ul class="posts">
+  {% for post in site.posts limit=1 %}
+    <li>{{ post.content }}</li>
+  {% endfor %}
+</ul>
