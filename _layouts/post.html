@@ -4,7 +4,7 @@ layout: default
 <div class="page-nav-top">
         <span class="page-nav-item">
         {% if page.previous %}
-          <a rel="prev" href="{{ page.previous.url }}/" 
+          <a rel="prev" href="{{ page.previous.url }}" 
             title="View {{ page.previous.title }}">
         {% endif %}
             &larr; View previous article
@@ -13,14 +13,14 @@ layout: default
         {% endif %}
         </span>
         <span class="page-nav-item">
-          <a rel="home" href="{{ site.url }}/" 
+          <a rel="home" href="{{ site.url }}" 
             title="Go Home">
             Home
           </a>
         </span>
         <span class="page-nav-item">
         {% if page.next %}
-          <a rel="next" href="{{ page.next.url }}/" 
+          <a rel="next" href="{{ page.next.url }}" 
             title="View {{ page.next.title }}">
         {% endif %}
             View next article &rarr;

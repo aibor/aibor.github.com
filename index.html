@@ -7,7 +7,7 @@ title: Hello World!
       <ul id="allposts">
       {% for post in site.posts %}
         <li class="postlist">
-          <a href="{{ post.url }}/" title="{{ post.title }}">
+          <a href="{{ post.url }}" title="{{ post.title }}">
             {{ post.title }}
           </a>
           <span class="date">Erstellt: {{ post.date | date_to_string }}</span>
