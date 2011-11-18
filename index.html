@@ -2,11 +2,16 @@
 layout: default
 title: Hello World!
 ---
-
-{% for post in site.posts %}
-<div class="posting">
-  <h2>{{ post.title }}</h2>
-  <p style="font-size:0.7em">{{ post.date | date_to_string }} {{ post.tags }}</p>
-  {{ post.content }}
-</div>
-{% endfor %}
+<h2>Willkommen!</h2>
+      <h3>Bisherige Einträge:</h3>
+      <ul id="allposts">
+      {% for post in site.posts %}
+        <li class="postlist">
+          <a href="{{ post.url }}/" title="{{ post.title }}">
+            {{ post.title }}
+          </a>
+          <span class="date">Erstellt: {{ post.date | date_to_string }}</span>
+          <span class="tags"> Tags: {{ post.tags | join ", " }}</span>
+        </li>
+      {% endfor %}
+      </ul>
