@@ -1,4 +1,4 @@
 markdown: kramdown
 pygments: true
 destination: /tmp/_site
-url: www.aibor.de
+url: http://www.aibor.de
