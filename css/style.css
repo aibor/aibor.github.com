@@ -1,5 +1,22 @@
 body {
-  margin: 10 auto;
+  background-image: url(/images/pattern_022.gif);
+  margin: 20px auto;
+  width: 800px;
+  text-align: center;
+  font-size: 100.01%;
+}
+#header a img {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  margin: 0 10px;
+}
+#footer {
+  margin: 48px auto 12px;
+  font-size: 0.7em;
+}
+#post-content {
+  text-align: justify;
 }
 .page-nav-top {
   display: block;
@@ -8,16 +25,19 @@ body {
 }
 .page-nav-item {
   margin: 2em;
-  /*padding: 2em;*/
 }
 .date, .tags {
   display: block;
   font-size: .7em;
 }
 .postlist {
+  margin:0;
+  padding:0;
+}
+.postlist li {
   margin: 1em auto;
   display: block;
 }
-.postlist a, .page-nav-item a {
+a {
   text-decoration: none;
 }
