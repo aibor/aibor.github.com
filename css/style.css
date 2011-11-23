@@ -1,9 +1,13 @@
 body {
-  background-image: url(/images/pattern_022.gif);
-  margin: 20px auto;
-  width: 800px;
+  /*background-image: url(/images/pattern_022.gif);*/
+  margin: 24px auto;
+  width: 640px;
   text-align: center;
   font-size: 100.01%;
+}
+#header {
+  padding: 0 0 10px;
+  border-bottom: solid 2px #555;
 }
 #header a img {
   width: 32px;
