@@ -2,8 +2,6 @@
 layout: default
 title: Hello World!
 ---
-## Willkommen!
-
 ### Bisherige Einträge:
 
 {% for post in site.posts %}
