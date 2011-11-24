@@ -15,9 +15,9 @@ layout: nil
   <entry>
     <title>{{ post.title }}</title>
     <link href="http://www.aibor.de{{ post.url }}"/>
-    <id>http://www.aibor.de{{ post.cwidurl }}</id>
-    <updated>{{ post.date | dateo_to_xmlschema }}</updated>
-    <content type="html">{{ post.content | xml.escape}}</content>
+    <id>http://www.aibor.de{{ post.id }}</id>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <content type="html">{{ post.content | xml_escape}}</content>
   </entry>
   {% endfor %}
 </feed>
