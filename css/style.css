@@ -1,47 +1,70 @@
 body {
-  /*background-image: url(/images/pattern_022.gif);*/
-  margin: 24px auto;
+  background-image: url(/images/pattern.png);
+  margin: 0 auto;
   width: 640px;
-  text-align: center;
+  text-align: left;
   font-size: 100.01%;
+  position: relative;
 }
-#header {
-  padding: 0 0 10px;
-  border-bottom: solid 2px #555;
+header {
+  padding: 12px 0;
+  border-bottom: solid 2px #955d26;
 }
-#header a img {
+header a {
+  margin: 0 10px;
+  font-size: 0px;
+}
+header .ext {
+  position: absolute;
+  right: 0px;
+}
+header a img {
   width: 32px;
   height: 32px;
   border: 0;
-  margin: 0 10px;
 }
-#footer {
-  margin: 48px auto 12px;
-  font-size: 0.7em;
+footer {
+  margin: 0 auto 24px;
+  border-top: solid 2px #955d26;
 }
-#content {
+article {
+  padding: 12px 0;
   text-align: justify;
 }
-.page-nav-top {
-  display: block;
-  margin: 2em auto;
-  text-align: center;
+article header {
+  padding: 0;
+  /*border: none;*/
 }
-.page-nav-item {
-  margin: 2em;
+article nav {
+  margin: 2em auto .2em;
+  color: #777;
+}
+article nav .next {
+  position: absolute;
+  right: 0px;
 }
 .date, .tags {
-  display: block;
+  display: inline-block;
   font-size: .7em;
+  width:49.6%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
-.postlist {
-  margin:0;
+.tags {
+  text-align: right;
+}
+ul.postlist {
+  margin: 2em auto;
   padding:0;
 }
-.postlist li {
+ul.postlist li {
   margin: 1em auto;
-  display: block;
+  /*display: block;*/
+  list-style-type: none;
+  font: 100% monospace;
 }
 a {
   text-decoration: none;
+  color: #955d26;
 }

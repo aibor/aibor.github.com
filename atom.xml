@@ -1,0 +1,23 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>aiBo</name>
+  </author>
+  <title>aiBo - blog</title>
+  <link href="http://www.aibor.de/atom.xml" rel="self"/>
+  <link href="http://www.aibor.de/"/>
+  <id>http://www.aibor.de/</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+{% for post in site.posts %} 
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="http://www.aibor.de{{ post.url }}"/>
+    <id>http://www.aibor.de{{ post.cwidurl }}</id>
+    <updated>{{ post.date | dateo_to_xmlschema }}</updated>
+    <content type="html">{{ post.content | xml.escape}}</content>
+  </entry>
+  {% endfor %}
+</feed>

@@ -1,31 +1,29 @@
 ---
 layout: default
 ---
-<div class="page-nav-top">
-        <span class="page-nav-item">
-        {% if page.previous %}
-          <a rel="prev" href="{{ page.previous.url }}" 
-            title="View {{ page.previous.title }}">
-        {% endif %}
-            &larr; View previous article
-        {% if page.previous %}
-          </a>
-        {% endif %}
-        </span>
-        <span class="page-nav-item">
-        {% if page.next %}
-          <a rel="next" href="{{ page.next.url }}" 
-            title="View {{ page.next.title }}">
-        {% endif %}
-            View next article &rarr;
-        {% if page.next %}
-          </a>
-        {% endif %}
-        </span>
-      </div>
-      <div id="post-content">
-        <h2>{{ page.title }}</h2>
-        <span class="date">Erstellt: {{ page.date | date_to_string }}</span>
-        <span class="tags">Tags: {{ page.tags | join " " }}</span>
+<header>
+          <h2>{{ page.title }}</h2>
+          <span class="date">Erstellt: {{ page.date | date_to_string }}</span>
+          <span class="tags">Tags: {{ page.tags | join " " }}</span>
+        </header>
         {{ content }}
-      </div>
+        <nav>
+          {% if page.previous %}
+            <a rel="prev" href="{{ page.previous.url }}" 
+              title="{{ page.previous.title }}">
+          {% endif %}
+              &larr; Vorheriger Artikel
+          {% if page.previous %}
+            </a>
+          {% endif %}
+          <span class="next">
+          {% if page.next %}
+            <a rel="next" href="{{ page.next.url }}" 
+              title="{{ page.next.title }}">
+          {% endif %}
+              Nächster Artikel &rarr;
+          {% if page.next %}
+            </a>
+          {% endif %}
+          </span>
+        </nav>

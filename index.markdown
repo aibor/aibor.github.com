@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Hello World!
+title: aiBo - yay.
 ---
-### Bisherige Einträge:
+## Artikel:
 
 {% for post in site.posts %}
-* [{{ post.title }}]({{ post.url }})
-<span class="date">Erstellt: {{ post.date | date_to_string }}</span>
-{:.postlist}
-{% endfor %}
+* {{ post.date | date_to_string }} &mdash; [{{ post.title }}]({{ post.url }})
+{% endfor %}{:.postlist}

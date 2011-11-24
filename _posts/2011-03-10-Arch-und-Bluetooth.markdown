@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Arch und Bluetooth
+categories: blog
 tags: arch bluetooth
 ---
 Um unter meinem neuen Arch-System auf dem Laptop Präsentationen mit dem Handy steuern zu können, habe ich Bluetooth auf dem System eingerichtet. Das Paket "bluez" bringt alles mit, um die Bluetooth-Schnittstelle zu benutzen und das Pairing mit dem Handy durchzuführen.
