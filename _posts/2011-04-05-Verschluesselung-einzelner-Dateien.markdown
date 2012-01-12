@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: article
 title: Verschlüsselung einzelner Dateien
-categories: blog
+categories: articles
 tags: linux shell verschlüsselung
 ---
 Zur schnellen Verschlüsslung einzener Dateien habe ich folgende [Syntax gefunden](https://bbs.archlinux.org/viewtopic.php?id=116152), die in die bashrc gehört:

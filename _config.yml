@@ -1,4 +1,4 @@
-markdown: kramdown
 pygments: true
 destination: /tmp/_site
 url: http://www.aibor.de
+pagination: 20

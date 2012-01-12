@@ -1,6 +1,6 @@
 body {
   /*background-image: url(/images/pattern.png);*/
-  margin: 0 auto;
+  margin: 0 50px;
   width: 640px;
   text-align: left;
   font-size: 100.01%;
@@ -54,7 +54,7 @@ article nav .next {
 .tags {
   text-align: right;
 }
-ul.postlist {
+ul.postlist, ul.linklist {
   margin: 2em auto;
   padding:0;
 }
@@ -64,7 +64,21 @@ ul.postlist li {
   list-style-type: none;
   font: 100% monospace;
 }
+ul.linklist li {
+  margin: 1em auto;
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   color: #955d26;
+}
+ul.linklist li p {
+  margin:0;
+  padding:0;
+}
+hr {
+  color: #955d26;
+  margin: 0 0 2em;
+  border:solid 1px #955d26
+
 }

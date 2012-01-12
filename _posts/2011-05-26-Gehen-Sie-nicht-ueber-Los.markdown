@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: article
 title: Gehen Sie nicht über Los...
-categories: blog
+categories: articles
 tags: windows installation usb
 ---
 ...ziehen Sie nicht 4000 Mark ein! Sondern starten Sie direkt neu - ins Windows XP auf der USB-Festplatte.

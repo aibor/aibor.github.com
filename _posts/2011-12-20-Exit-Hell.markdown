@@ -1,0 +1,6 @@
+---
+layout: article
+categories: articles
+tags: linux bash
+---
+Niemals 'exit' in ein Skript in /etc/profile.d/ nutzen. QQ
