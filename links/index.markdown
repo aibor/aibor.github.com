@@ -1,6 +1,6 @@
 ---
 layout: default
-array: [Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember]
+array: Januar Februar März April Mai Juni Juli August September Oktober November Dezember
 ---
 {% for post in site.categories.links %}
 {% capture pyear %}{{ post.date | date: "%Y" }}{% endcapture %}
