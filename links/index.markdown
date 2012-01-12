@@ -1,6 +1,6 @@
 ---
 layout: default
-array: Januar Februar März April Mai Juni Juli August September Oktober November Dezember
+monthnames: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
 ---
 {% for post in site.categories.links %}
 {% capture pyear %}{{ post.date | date: "%Y" }}{% endcapture %}
@@ -11,7 +11,7 @@ array: Januar Februar März April Mai Juni Juli August September Oktober Novembe
 {% endif %}
 {% if gmonth == NULL or gmonth != pmonth %}
   {% assign gmonth = pmonth %}
-  {% for monthname in page.array %}
+  {% for monthname in page.monthnames %}
     {% if forloop.index < 10 %}
       {% capture floop %}0{{ forloop.index }}{% endcapture %}
     {% else %}
