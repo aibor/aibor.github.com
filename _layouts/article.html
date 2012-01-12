@@ -1,13 +1,7 @@
 ---
 layout: default
 ---
-<header>
-          <h2>{{ page.title }}</h2>
-          <span class="date">Erstellt: {{ page.date | date_to_string }}</span>
-          {% if page.tags != empty %}
-            <span class="tags">Tags: {{ page.tags | join " " }}</span>
-          {% endif %}
-        </header>
+{% include article-header.html %}
         {{ content }}
         <nav>
         {% for post in site.categories.articles %}

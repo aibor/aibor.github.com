@@ -2,17 +2,22 @@
 layout: default
 title: aiBo - yay.
 ---
-## Artikel:
+## [Artikel][1]
 
 {% for post in site.categories.articles limit:10 %}
-* {{ post.date | date_to_string }} &mdash; [{{ post.title }}]({{ post.url }})
+* {{ post.date | date: "%d\.%m\.%Y" }} &mdash; [{{ post.title }}]({{ post.url }})
 {% endfor %}{:.postlist}
+[Alle Artikel][1]
+
+[1]: /articles/ "Alle Artikel anzeigen"
 
 ---
-## Links:
+## [Links][2]
 
 {% for post in site.categories.links limit:10 %}
-* {{ post.content }}
-  <p style="margin:0; padding:0; font-size:60%; color:#333;">{{ post.date | date_to_long_string }}</p>
+* <p>{{ post.content }}</p>
+  <p style="margin:0; padding:0; font-size:60%; color:#333;">{{ post.date | date: "%d.%m.%Y" }}</p>
 {% endfor %}{:.linklist}
-[Alle Links](/links/ "Alle Links auflisten")
+[Alle Links][2]
+
+[2]: /links/ "Alle Links auflisten"

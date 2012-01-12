@@ -1,20 +1,16 @@
 ---
 layout: default
 ---
-<header>
-          <h2>{{ page.title }}</h2>
-          <span class="date">Erstellt: {{ page.date | date_to_string }}</span>
-          <span class="tags">Tags: {{ page.tags | join " " }}</span>
-        </header>
+{% include article-header.html %}
         {{ content }}
         <nav>
-        {% for post in site.categories.blog %}
+        {% for post in site.categories.articles %}
           {% if post.url == page.url %}
             {% assign post_index0 = forloop.index0 %}
             {% assign post_index1 = forloop.index %}
           {% endif %}
         {% endfor %}
-        {% for post in site.categories.blog %}
+        {% for post in site.categories.articles %}
           {% if post_index0 == forloop.index %}
             {% assign next_post = post.url %}
             {% assign next_title = post.title %}
