@@ -22,6 +22,6 @@ monthnames: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, 
     {% endif %}
   {% endfor %}
 {% endif %}
-* <p>{{ post.content }}</p>
-  <p style="margin:0; padding:0; font-size:60%; color:#333;">{{ post.date | date: "%d.%m.%Y" }}</p>
-{% endfor %}{:.linklist}
+<p>{{ post.content }}</p>
+<p style="margin:0; padding:0; font-size:60%; color:#333;">{{ post.date | date: "%d.%m.%Y" }}</p>
+{% endfor %}
