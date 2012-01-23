@@ -14,7 +14,7 @@ function mergepdf() {
 
 Der erste Parameter gibt dabei den Namen der Ausgabe-pdf an und jedes weitere Parameter stellt eine Inputdatei dar.
 
-{% highlight bash %}
+{% highlight console %}
 $ mergepdf output.pdf *
 {% endhighlight %}
 
