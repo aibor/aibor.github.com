@@ -84,3 +84,12 @@ hr {
   color: #955d26;
   border:solid 1px #955d26
 }
+pre, code {
+  color: #000000;
+  background-color: #bbb;
+}
+blockquote {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: solid 1px #955d26;
+}
