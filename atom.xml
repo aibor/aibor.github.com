@@ -7,15 +7,15 @@ layout: nil
     <name>aiBo</name>
   </author>
   <title>aiBo - blog</title>
-  <link href="http://www.aibor.de/atom.xml" rel="self"/>
-  <link href="http://www.aibor.de/"/>
-  <id>http://www.aibor.de/</id>
+  <link href="http://blog.aibor.de/atom.xml" rel="self"/>
+  <link href="http://blog.aibor.de/"/>
+  <id>http://blog.aibor.de/</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
 {% for post in site.categories.articles limit:10 %} 
   <entry>
     <title>{{ post.title }}</title>
-    <link href="http://www.aibor.de{{ post.url }}"/>
-    <id>http://www.aibor.de{{ post.id }}</id>
+    <link href="http://blog.aibor.de{{ post.url }}"/>
+    <id>http://blog.aibor.de{{ post.id }}</id>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <content type="html">{{ post.content | xml_escape}}</content>
   </entry>
