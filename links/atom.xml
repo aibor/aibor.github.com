@@ -6,12 +6,12 @@ layout: nil
   <author>
     <name>aiBo</name>
   </author>
-  <title>aiBo - blog</title>
-  <link href="http://blog.aibor.de/atom.xml" rel="self"/>
-  <link href="http://blog.aibor.de/"/>
+  <title>aiBo - Links</title>
+  <link href="http://blog.aibor.de/links/atom.xml" rel="self"/>
+  <link href="http://blog.aibor.de/links/"/>
   <id>http://blog.aibor.de/</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-{% for post in site.posts limit:17 %} 
+{% for post in site.categories.links limit:20 %} 
   <entry>
     <title>{{ post.title }}</title>
     <link href="http://blog.aibor.de{{ post.url }}"/>
