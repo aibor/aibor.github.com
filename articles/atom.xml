@@ -5,6 +5,7 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>
     <name>aiBo</name>
+    <uri>http://blog.aibor.de/</uri>
   </author>
   <title>aiBo - Artikel</title>
   <link href="http://blog.aibor.de/articles/atom.xml" rel="self"/>
