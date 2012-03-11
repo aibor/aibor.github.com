@@ -15,6 +15,7 @@ layout: nil
   <entry>
     <author>
       <name>aiBo</name>
+      <uri>http://blog.aibor.de/</uri>
     </author>
     <title>{{ post.title }}</title>
     <link href="http://blog.aibor.de{{ post.url }}"/>
