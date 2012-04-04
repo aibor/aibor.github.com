@@ -1,6 +1,6 @@
 ---
 layout: default
-title: aiBo - yay.
+title: aiBo - Notizblog
 ---
 ## [Artikel][1] <a href="/articles/atom.xml" title="Feed für Artikel"><img src="/images/feed-small.png" alt="Feed" title="Feed für Artikel"></a>
 

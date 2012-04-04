@@ -1,5 +1,6 @@
 ---
 layout: default
+aiBo - Notizblog - Links
 monthnames: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
 ---
 {% for post in site.categories.links %}
