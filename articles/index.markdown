@@ -1,6 +1,6 @@
 ---
 layout: default
-aiBo - Notizblog - Artikel
+title: aiBo - Notizblog - Artikel
 ---
 {% for post in site.categories.articles %}
   {% include article-header.html %}
