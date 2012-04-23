@@ -33,6 +33,7 @@ article {
 }
 article header {
   padding: 0;
+	margin-bottom: 1em;
   /*border: none;*/
 }
 article h2 {
