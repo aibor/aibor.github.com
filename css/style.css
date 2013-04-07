@@ -87,10 +87,10 @@ hr {
 }
 pre, code {
   color: #000000;
-  background-color: #bbb;
 }
 pre {
   padding: 5px;
+  background-color: #bbb;
 }
 blockquote {
   margin-left: 20px;
