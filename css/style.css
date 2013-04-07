@@ -88,7 +88,9 @@ hr {
 pre, code {
   color: #000000;
   background-color: #bbb;
-  margin: 5px;
+}
+pre {
+  padding: 5px;
 }
 blockquote {
   margin-left: 20px;
