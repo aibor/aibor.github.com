@@ -15,12 +15,12 @@ push "route-ipv6 ::/0"
 Nach einem Neustart von Server und Client hat man nun IPv6-Konnektivität zwischen den Endpunkten.
 
 Damit der Server die Pakete nun weiterleitet und Pakete auch den Weg zum Client finden, müssen ein paar Kernelparameter angepasst werden:
-{% highlight %}
+{% highlight console %}
 net.ipv6.conf.all.forwarding=1 # Forwarding aktivieren
 net.ipv6.conf.eth0.proxy\_ndp=1 # Neighbor Solicitation weiterreichen
 {% endhighlight %}
 Außerdem muss man die Adresse des Clients für den [Neighbor Solicitation][3] Proxy angeben:
-{% highlight %}
+{% highlight console %}
 $ ip -6 neigh add proxy 2001:cafe:babe:beef::42 dev eth0
 {% endhighlight %}
 Anschließend sollten Pakete in beide Richtung ihren Weg finden.
