@@ -17,7 +17,7 @@ Nach einem Neustart von Server und Client hat man nun IPv6-Konnektivität zwisch
 Damit der Server die Pakete nun weiterleitet und Pakete auch den Weg zum Client finden, müssen ein paar Kernelparameter angepasst werden:
 {% highlight %}
 net.ipv6.conf.all.forwarding=1 # Forwarding aktivieren
-net.ipv6.conf.eth0.proxy_ndp=1 # Neighbor Solicitation weiterreichen
+net.ipv6.conf.eth0.proxy\_ndp=1 # Neighbor Solicitation weiterreichen
 {% endhighlight %}
 Außerdem muss man die Adresse des Clients für den [Neighbor Solicitation][3] Proxy angeben:
 {% highlight %}
