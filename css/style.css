@@ -34,7 +34,8 @@ footer p {
   color: #555;
 }
 article {
-  padding: 12px 0;
+  /*padding: 12px 0;*/
+  margin: 8px 0;
   text-align: justify;
 }
 article header {
