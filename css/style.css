@@ -26,6 +26,9 @@ header a img {
 footer {
   margin: 0 auto 24px;
   border-top: solid 2px #955d26;
+  line-height: 1.7;
+  font-size: 0.8;
+  color: #333;
 }
 article {
   padding: 12px 0;
