@@ -8,7 +8,6 @@ layout: nil
     <uri>http://blog.aibor.de/</uri>
   </author>
   <title>aiBo - blog</title>
-  <link href="http://blog.aibor.de/atom.xml" rel="self"/>
   <link href="http://blog.aibor.de/"/>
   <id>http://blog.aibor.de/</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
