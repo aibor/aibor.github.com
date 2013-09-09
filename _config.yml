@@ -1,3 +1,4 @@
 pygments: true
 destination: /tmp/_site
 url: http://blog.aibor.de
+excerpt_separator: ""
