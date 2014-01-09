@@ -14,6 +14,7 @@ title: aiBo - Notizblog
 ---
 ## [Links][2] <a href="/links/atom.xml" title="Feed für Links"><img src="/images/feed-small.png" alt="Feed" title="Feed für Links"></a>
 
+<ul class="linklist">
 {% for post in site.categories.links limit:10 %}
 <li>
 <p>
@@ -23,7 +24,8 @@ title: aiBo - Notizblog
   {{ post.date | date: "%d.%m.%Y" }}
 </p>
 </li>
-{% endfor %}{:.linklist}
+{% endfor %}
+</ul>
 [Alle Links][2]
 
 [2]: /links/ "Alle Links auflisten"
