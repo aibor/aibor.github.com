@@ -2,7 +2,7 @@
 layout: default
 title: aiBo - Notizblog
 ---
-## [Artikel][1] <a href="/articles/atom.xml" title="Feed für Artikel"><img src="/images/feed-small.png" alt="Feed" title="Feed für Artikel"></a>
+## [Artikel][1] [![Feed][3]][2]
 
 {% for post in site.categories.articles limit:10 %}
 * {{ post.date | date: "%d\.%m\.%Y" }} &mdash; [{{ post.title }}]({{ post.url }})
@@ -10,9 +10,12 @@ title: aiBo - Notizblog
 [Alle Artikel][1] 
 
 [1]: /articles/ "Alle Artikel anzeigen"
+[2]: /articles/atom.xml "Feed f&uml;r Artikel"
+[3]: /images/feed-small.png
 
 ---
-## [Links][2] <a href="/links/atom.xml" title="Feed für Links"><img src="/images/feed-small.png" alt="Feed" title="Feed für Links"></a>
+
+## [Links][4] [![Feed][6]][5]
 
 <ul class="linklist">
 {% for post in site.categories.links limit:10 %}
@@ -26,6 +29,8 @@ title: aiBo - Notizblog
 </li>
 {% endfor %}
 </ul>
-[Alle Links][2]
+[Alle Links][4]
 
-[2]: /links/ "Alle Links auflisten"
+[4]: /links/ "Alle Links auflisten"
+[5]: /links/atom.xml "Feed f&uml;r Links"
+[6]: /images/feed-small.png
