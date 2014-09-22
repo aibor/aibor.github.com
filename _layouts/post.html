@@ -2,40 +2,41 @@
 layout: default
 ---
 {% include article-header.html %}
-        {{ content }}
-        <nav>
-        {% for post in site.categories.articles %}
-          {% if post.url == page.url %}
-            {% assign post_index0 = forloop.index0 %}
-            {% assign post_index1 = forloop.index %}
-          {% endif %}
-        {% endfor %}
-        {% for post in site.categories.articles %}
-          {% if post_index0 == forloop.index %}
-            {% assign next_post = post.url %}
-            {% assign next_title = post.title %}
-          {% endif %} 
-          {% if post_index1 == forloop.index0 %}
-            {% assign prev_post = post.url %}
-            {% assign prev_title = post.title %}
-          {% endif %} 
-        {% endfor %}
-          {% if prev_post %}
-            <a rel="prev" href="{{ prev_post }}" 
-              title="{{ prev_title }}">
-          {% endif %}
-              &larr; Vorheriger Artikel
-          {% if prev_post %}
-            </a>
-          {% endif %}
-          <span class="next">
-          {% if next_post %}
-            <a rel="next" href="{{ next_post }}" 
-              title="{{ next_title }}">
-          {% endif %}
-              Nächster Artikel &rarr;
-          {% if next_post %}
-            </a>
-          {% endif %}
-          </span>
-        </nav>
+{{ content }}
+<nav>
+  {% for post in site.categories.articles %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in site.categories.articles %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post.url %}
+      {% assign next_title = post.title %}
+    {% endif %} 
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post.url %}
+      {% assign prev_title = post.title %}
+    {% endif %} 
+  {% endfor %}
+
+  {% if prev_post %}
+  <a rel="prev" href="{{ prev_post }}" title="{{ prev_title }}">
+  {% endif %}
+    &larr; Vorheriger Artikel
+  {% if prev_post %}
+  </a>
+  {% endif %}
+
+  <span class="next">
+    {% if next_post %}
+    <a rel="next" href="{{ next_post }}" title="{{ next_title }}">
+    {% endif %}
+      N&auml;chster Artikel &rarr;
+    {% if next_post %}
+    </a>
+    {% endif %}
+  </span>
+</nav>
