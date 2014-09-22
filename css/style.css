@@ -1,5 +1,4 @@
 body {
-  /*background-image: url(/images/pattern.png);*/
   margin: 0 50px;
   width: 640px;
   text-align: left;
@@ -94,10 +93,12 @@ hr {
 }
 pre, code {
   color: #000000;
-  background-color: #bbb;
+  background-color: #ddd;
 }
 pre {
   padding: 5px;
+  border: 1px solid #888;
+  margin: 10px;
 }
 blockquote {
   margin-left: 20px;
