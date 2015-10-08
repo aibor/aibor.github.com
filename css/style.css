@@ -111,3 +111,7 @@ p.timestamp {
   font-size: 60%;
   color: #333;
 }
+p.with_timestamp {
+  margin-bottom:0;
+  padding-bottom:0;
+}

@@ -2,9 +2,11 @@
   {% if post == nil %}
     {% assign post = page %}
   {% endif %}
-<h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-          <span class="date">Erstellt: {{ post.date | date: "%d.%m.%Y" }}</span>
-          {% if post.tags != empty %}
-            <span class="tags">Tags: {{ post.tags | join " " }}</span>
-          {% endif %}
-        </header>
+  <h2>
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  </h2>
+  <span class="date">Erstellt: {{ post.date | date: "%d.%m.%Y" }}</span>
+  {% if post.tags != empty %}
+  <span class="tags">Tags: {{ post.tags | join " " }}</span>
+  {% endif %}
+</header>

@@ -27,9 +27,12 @@ monthnames: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, 
     {% endfor %}
   {% endif %}
 
-  {{ post.content }}{: style="margin-bottom:0; padding-bottom:0;"}
+  {{ post.content }}{:.with_timestamp}
 
+  {% if post.tags == empty %}
   {{ post.date | date: "%d.%m.%Y" }}
-  {:.timestamp}
+  {% else %}
+  {{ post.date | date: "%d.%m.%Y" }}  —  {{ post.tags | join " " }}
+  {% endif %}{:.timestamp}
 
 {% endfor %}
