@@ -6,3 +6,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - CNAME
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      monthnames: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]

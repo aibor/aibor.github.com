@@ -1,18 +1,16 @@
 ---
-layout: default
 title: aiBo - Notizblog - Artikel
 ---
 {% for post in site.categories.articles %}
-  {% include article-header.html %}
+{% include bymonth.md %}
 
-  {{ post.content }}
+[{{ post.title }}]({{ post.url }})
+{:.with_timestamp}
 
-  {% if forloop.last %}
-  {% else %}
-<footer>
-  <center>
-    <a href="#">top</a>
-  </center>
-</footer>
-  {% endif %}
+{% if post.tags == empty %}
+{{ post.date | date: "%d.%m.%Y" }}
+{% else %}
+{{ post.date | date: "%d.%m.%Y" }}  —  {{ post.tags | join " " }}
+{% endif %}{:.timestamp}
+
 {% endfor %}

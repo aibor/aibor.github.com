@@ -23,7 +23,7 @@ header a img {
   border: 0;
 }
 footer {
-  margin: 0 auto 24px;
+  margin: 2em auto 2em;
   border-top: solid 2px #955d26;
   text-align: center;
 }

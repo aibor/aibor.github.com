@@ -1,5 +1,4 @@
 ---
-layout: default
 title: aiBo - Notizblog
 ---
 ## [Artikel][1] [![Feed][3]][2]
@@ -46,9 +45,9 @@ title: aiBo - Notizblog
 {% include sorted-tags.md %}
 
 {% capture taglist %}
-  {% for tag in sorted-tags %}
-  [{{ tag }}](/tags/#{{ tag }})
-  {% endfor %}
+{% for tag in sorted-tags %}
+[{{ tag }}](/tags/#{{ tag }})
+{% endfor %}
 {% endcapture  %}
 
 {{ taglist | split:" " | join:" — " }}
