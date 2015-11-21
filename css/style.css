@@ -1,25 +1,23 @@
 body {
-  margin: 0 50px;
-  width: 640px;
+  margin: 0 4em;
+  min-width: 32em;
   text-align: left;
   font-size: 100.01%;
   position: relative;
 }
 header {
-  padding: 12px 0;
+  padding: 1em 0;
   border-bottom: solid 2px #955d26;
 }
 #pageh a  {
-  margin: 0 10px;
-  font-size: 0px;
+  margin: 0 .6em;
 }
 header .ext {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 header a img {
-  width: 32px;
-  height: 32px;
+  width: 2em;
   border: 0;
 }
 footer {
@@ -29,22 +27,19 @@ footer {
 }
 footer p {
   line-height: 2;
-  font-size: 0.8em;
+  font-size: .8em;
   color: #555;
 }
 article {
-  /*padding: 12px 0;*/
-  margin: 8px 0;
+  margin: .5em 0;
   text-align: justify;
 }
 article header {
   padding: 0;
 	margin-bottom: 1em;
-  /*border: none;*/
 }
 article h2 {
-  margin:2em 0 0;
-  /*padding:.5em 0;*/
+  margin: 2em 0 0;
 }
 article nav {
   margin: 2em auto .2em;
@@ -52,12 +47,12 @@ article nav {
 }
 article nav .next {
   position: absolute;
-  right: 0px;
+  right: 0;
 }
 .date, .tags {
   display: inline-block;
   font-size: .7em;
-  width:49.6%;
+  width: 49.6%;
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,11 +62,10 @@ article nav .next {
 }
 ul.postlist, ul.linklist {
   margin: 2em auto;
-  padding:0;
+  padding: 0;
 }
 ul.postlist li {
   margin: 1em auto;
-  /*display: block;*/
   list-style-type: none;
   font: 100% monospace;
 }
@@ -84,8 +78,8 @@ a {
   color: #955d26;
 }
 ul.linklist li p {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 hr {
   color: #955d26;
@@ -96,13 +90,13 @@ pre, code {
   background-color: #ddd;
 }
 pre {
-  padding: 5px;
+  padding: .3em;
   border: 1px solid #888;
   margin: 10px;
 }
 blockquote {
-  margin-left: 20px;
-  padding-left: 20px;
+  margin-left: 1.3em;
+  padding-left: 1.3em;
   border-left: solid 1px #955d26;
 }
 p.timestamp {
@@ -112,6 +106,6 @@ p.timestamp {
   color: #333;
 }
 p.with_timestamp {
-  margin-bottom:0;
-  padding-bottom:0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
