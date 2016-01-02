@@ -5,9 +5,9 @@ date: 2016-01-02 21:26:09
 title: Letsencrypt systemd
 tags: letsencrypt systemd arch
 ---
-Flipez hat in seinem Blog kürzlich ["eine Möglichkeit zur
+Flipez hat in seinem Blog kürzlich [eine Möglichkeit zur
 vollautomatischen Integration von Letsencrypt auf einem
-Arch-System"](https://blog.flipez.de/2015/11/17/letsencrypt/)
+Arch-System](https://blog.flipez.de/2015/11/17/letsencrypt/)
 beschrieben. Da ich gerade ein solches frisches System zur Hand hatte,
 welches TLS-Zertifikate für HTTPS benötigte, habe ich direkt fröhlich
 und dankbar in den copy&paste-Modus geschalten. Allerdings nur bis zu
