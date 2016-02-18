@@ -43,7 +43,8 @@ WantedBy=multi-user.target
 Description=run cert renew for %I every two month
 
 [Timer]
-OnUnitActiveSec=2month
+OnCalendar=*-*/2-4 1:0:0
+Persistent=true
 
 [Install]
 WantedBy=multi-user.target
