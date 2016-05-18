@@ -32,9 +32,6 @@ ExecStart=/usr/bin/letsencrypt --renew certonly \
   -a webroot --webroot-path=/tmp/letsencrypt-auto \
   -d %I
 ExecStartPost=/usr/bin/nginx -s reload
-
-[Install]
-WantedBy=multi-user.target
 {% endhighlight %}
 
 {% highlight ini %}
