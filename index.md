@@ -1,29 +1,10 @@
 ---
 title: aiBo - Notizblog
 ---
-## [Artikel][1] [![Feed][3]][2]
-
-{% for post in site.categories.articles limit:5 %}
-* [{{ post.title }}]({{ post.url }})
-  {:.with_timestamp}
-  {% if post.tags == empty %}
-  {{ post.date | date: "%d.%m.%Y" }}
-  {% else %}
-  {{ post.date | date: "%d.%m.%Y" }}  —  {{ post.tags | join " " }}
-  {% endif %}{:.timestamp}
-{% endfor %}{:.linklist}
-
-[Alle Artikel][1] 
-
-[1]: /articles/ "Alle Artikel anzeigen"
-[2]: /articles/atom.xml "Feed f&uuml;r Artikel"
-[3]: /images/feed-small.png
-
----
 
 ## [Links][4] [![Feed][6]][5]
 
-{% for post in site.categories.links limit:10 %}
+{% for post in site.categories.links limit:20 %}
 * {{ post.content }}
   {% if post.tags == empty %}
   {{ post.date | date: "%d.%m.%Y" }}
