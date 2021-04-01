@@ -10,7 +10,7 @@ title: aiBo - Notizblog - Links
 {{ post.date | date: "%d.%m.%Y" }}
 {% else %}
 {{ post.date | date: "%d.%m.%Y" }}  —
-{% for tag in sorted-tags %}
+{%- for tag in post.tags %}
   [{{ tag }}](/tags/#{{ tag }})
 {% endfor %}
 {% endif %}{:.timestamp}
