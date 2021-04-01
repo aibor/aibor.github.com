@@ -10,9 +10,9 @@ title: aiBo - Notizblog
   {{ post.date | date: "%d.%m.%Y" }}
   {% else %}
   {{ post.date | date: "%d.%m.%Y" }}  —
-  {%- for tag in post.tags %}
+  {%- for tag in post.tags -%}
     [{{ tag }}](/tags/#{{ tag }})
-  {% endfor %}
+  {%- endfor %}
   {% endif %}{:.timestamp}
 {% endfor %}{:.linklist}
 
