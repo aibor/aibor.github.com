@@ -9,7 +9,10 @@ title: aiBo - Notizblog
   {% if post.tags == empty %}
   {{ post.date | date: "%d.%m.%Y" }}
   {% else %}
-  {{ post.date | date: "%d.%m.%Y" }}  —  {{ post.tags | join " " }}
+  {{ post.date | date: "%d.%m.%Y" }}  —
+  {% for tag in sorted-tags %}
+    [{{ tag }}](/tags/#{{ tag }})
+  {% endfor %}
   {% endif %}{:.timestamp}
 {% endfor %}{:.linklist}
 
