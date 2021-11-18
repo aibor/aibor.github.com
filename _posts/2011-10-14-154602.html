@@ -5,4 +5,4 @@ date: 2011-10-14 15:46:02+01:00
 title: "Burial- NYC (hq) - YouTube"
 linkurl: "http://www.youtube.com/watch?v=UTT_GemAhtQ"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

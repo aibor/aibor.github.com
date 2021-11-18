@@ -5,4 +5,4 @@ date: 2020-06-30 18:47:48
 title: "Mordechai | Khruangbin"
 linkurl: "https://khruangbin.bandcamp.com/album/mordechai"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

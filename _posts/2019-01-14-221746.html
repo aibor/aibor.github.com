@@ -5,4 +5,4 @@ date: 2019-01-14 22:17:47
 title: "Keep On Drinking - Johnny Young - YouTube"
 linkurl: "https://www.youtube.com/watch?v=laec7_44PCo"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

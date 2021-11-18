@@ -6,4 +6,4 @@ title: "Blues Houseparty - YouTube"
 linkurl: "https://www.youtube.com/watch?v=e21nqPuo6HU"
 tags: piedmont blues
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

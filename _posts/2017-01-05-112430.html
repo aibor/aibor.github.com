@@ -5,4 +5,4 @@ date: 2017-01-05 11:24:31
 title: "indigo jam unit - Escape - YouTube"
 linkurl: "https://www.youtube.com/watch?v=sT3IsHwUYno"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

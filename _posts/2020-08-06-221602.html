@@ -5,4 +5,4 @@ date: 2020-08-06 22:16:03
 title: "Frank Zappa Black Napkins - YouTube"
 linkurl: "https://www.youtube.com/watch?v=hfMtYvFRBbc"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

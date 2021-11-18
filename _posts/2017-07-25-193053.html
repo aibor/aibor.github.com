@@ -5,4 +5,4 @@ date: 2017-07-25 19:30:53
 title: "Oscar Peterson Synth - YouTube"
 linkurl: "https://www.youtube.com/watch?v=FI-4HNQg1JI"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

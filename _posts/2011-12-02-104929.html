@@ -5,4 +5,4 @@ date: 2011-12-02 10:49:29+01:00
 title: "Burger and Boulder on Vimeo"
 linkurl: "http://vimeo.com/32436927"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

@@ -5,4 +5,4 @@ date: 2019-10-12 13:29:55
 title: "Jean-Luc Ponty - Individual Choice - YouTube"
 linkurl: "https://www.youtube.com/watch?v=hZm85q6zt6s"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

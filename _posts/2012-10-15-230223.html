@@ -5,4 +5,4 @@ date: 2012-10-15 23:02:24
 title: "Salva &#124; XLR8R"
 linkurl: "http://www.xlr8r.com/podcast/2011/03/salva"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

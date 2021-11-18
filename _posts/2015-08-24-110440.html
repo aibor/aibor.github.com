@@ -6,4 +6,4 @@ title: "Goodbye MongoDB, Hello PostgreSQL"
 linkurl: "http://developer.olery.com/blog/goodbye-mongodb-hello-postgresql/"
 tags: postgresql
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

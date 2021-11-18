@@ -6,4 +6,4 @@ title: "Scrapper Blackwell - Nobody Knows You When You&#39;re Down and Out - You
 linkurl: "https://www.youtube.com/watch?v=626pNZB8xXE"
 tags: blues
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>

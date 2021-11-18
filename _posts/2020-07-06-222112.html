@@ -5,4 +5,4 @@ date: 2020-07-06 22:21:14
 title: "Symphonie Pacifique | Greg Foat"
 linkurl: "https://gregfoat.bandcamp.com/album/symphonie-pacifique"
 ---
-<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title }}'>{{ page.title }}</a>
+<a href="{{ page.linkurl }}" target="_blank" title='{{ page.title | escape_once }}'>{{ page.title | escape_once }}</a>
