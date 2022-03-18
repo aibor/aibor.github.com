@@ -1,7 +1,7 @@
 #highlighter: pygments
 highlighter: rouge
 destination: /tmp/_site
-url: http://blog.aibor.de
+url: https://blog.aibor.de
 excerpt_separator: ""
 exclude:
   - Gemfile
