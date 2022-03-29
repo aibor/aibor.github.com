@@ -14,7 +14,7 @@ layout: atom
   <entry>
     <author>
       <name>aiBo</name>
-      <uri>http://blog.aibor.de/</uri>
+      <uri>https://blog.aibor.de/</uri>
     </author>
     <title>{{ post.title }}</title>
     <link href="https://blog.aibor.de{{ post.url }}" />
