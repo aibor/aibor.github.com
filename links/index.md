@@ -4,7 +4,8 @@ title: aiBo - Notizblog - Links
 {% for post in site.categories.links %}
 {% include bymonth.md %}
 
-[{{ post.title | escape_once }}]({{ post.linkurl }} "{{ post.title | escape_once }}"){:.with_timestamp}
+[{{ post.title | escape_once }}]({{ post.linkurl }} "{{ post.title | escape_once }}")
+{:.with_timestamp}
 
 {% if post.tags == empty %}
 {{ post.date | date: "%d.%m.%Y" }}
