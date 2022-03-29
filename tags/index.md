@@ -9,7 +9,8 @@ title: aiBo - Notizblog - Tags
 {% for post in site.tags[tag] %}
 
 {% if post.categories contains 'links' %}
-{{ post.content }}{:.with_timestamp}
+[{{ post.title | escape_once | replace: '|', '&#124;' }}]({{ post.linkurl }})
+{:.with_timestamp}
 {% else %}
 [{{ post.title }}]({{ post.url }})
 {:.with_timestamp}
