@@ -19,7 +19,10 @@ title: aiBo - Notizblog - Tags
 {% if post.tags == empty %}
 {{ post.date | date: "%d.%m.%Y" }}
 {% else %}
-{{ post.date | date: "%d.%m.%Y" }}  —  {{ post.tags | join " " }}
+{{ post.date | date: "%d.%m.%Y" }}  —
+{%- for tag in post.tags %}
+  [{{ tag }}](/tags/#{{ tag }})
+{%- endfor %}
 {% endif %}{:.timestamp}
 
 {% endfor %}
