@@ -5,6 +5,7 @@ title: aiBo - Notizblog - Links
 {% include bymonth.md %}
 
 [{{ post.title }}]({{ post.linkurl }} "{{ post.title }}")
+
 {:.with_timestamp}
 
 {% if post.tags == empty %}
