@@ -10,7 +10,7 @@ layout: atom
   <link href="https://blog.aibor.de/" />
   <id>https://blog.aibor.de/</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  {% for post in site.posts limit:17 %} 
+  {% for post in site.posts limit:42 %}
   <entry>
     <author>
       <name>aiBo</name>

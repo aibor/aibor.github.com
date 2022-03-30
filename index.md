@@ -2,7 +2,7 @@
 title: aiBo - Notizblog
 ---
 
-## [Links][4] [![Feed][6]][5]
+## [Links][4]
 
 {% for post in site.categories.links limit:20 %}
 * [{{ post.title | escape_once | replace: '|', '&#124;' }}]({{ post.linkurl }})
@@ -19,8 +19,6 @@ title: aiBo - Notizblog
 [Alle Links][4]
 
 [4]: /links/ "Alle Links auflisten"
-[5]: /links/atom.xml "Feed f&uuml;r Links"
-[6]: /images/feed-small.png
 
 ---
 
