@@ -2,16 +2,20 @@
 layout: default
 ---
 {% include article-header.html %}
-{{ content }}
+
+<a href="{{ post.linkurl }}" target=\"_blank\" title='{{ post.title | escape_once }}'>
+  {{ post.title | escape_once }}
+</a>
+
 <nav>
-  {% for post in site.categories.articles %}
+  {% for post in site.categories.links %}
     {% if post.url == page.url %}
       {% assign post_index0 = forloop.index0 %}
       {% assign post_index1 = forloop.index %}
     {% endif %}
   {% endfor %}
 
-  {% for post in site.categories.articles %}
+  {% for post in site.categories.links %}
     {% if post_index0 == forloop.index %}
       {% assign next_post = post.url %}
       {% assign next_title = post.title %}
@@ -25,7 +29,7 @@ layout: default
   {% if prev_post %}
   <a rel="prev" href="{{ prev_post }}" title="{{ prev_title }}">
   {% endif %}
-    &larr; Vorheriger Artikel
+    &larr; Vorheriger Link
   {% if prev_post %}
   </a>
   {% endif %}
@@ -34,7 +38,7 @@ layout: default
     {% if next_post %}
     <a rel="next" href="{{ next_post }}" title="{{ next_title }}">
     {% endif %}
-      N&auml;chster Artikel &rarr;
+      N&auml;chster Link &rarr;
     {% if next_post %}
     </a>
     {% endif %}
